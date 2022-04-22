@@ -3,6 +3,8 @@ from .models import Item
 from .forms import ItemForm
 
 # Create your views here.
+
+
 def get_todo_list(request):
     items = Item.objects.all()
     context = {
